@@ -34,6 +34,8 @@ Once you've configured the module, just modify the file **auth/models.js** to se
 
 That's it, all you have to do is run server and go to http://localhost:9300/#login and fill the form with email and password.
 
+## Customize
+
 You can overwrite the methods on User model:
 
 * login
