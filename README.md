@@ -66,7 +66,7 @@ For example:
 })(auth);
 ```
 
-Also can modify the views on auth module:
+Also can modify the views and templates on auth module:
 
 * Register
 * Login
