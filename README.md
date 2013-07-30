@@ -42,6 +42,30 @@ You can overwrite the methods on User model:
 * register
 * logout
 
+For example:
+
+```js
+(function(namespace) {
+
+  var models = namespace.models;
+
+  models.User = models.UserModel.extend({
+    loginURL: '', //Set your login uri
+    registerURL: '', //Set your register uri
+    register: function() {
+      //TODO: overwrite
+    },
+    login: function() {
+      //TODO: overwrite
+    },
+    logout: function() {
+      //TODO: overwrite
+    }
+  });
+
+})(auth);
+```
+
 Also can modify the views on auth module:
 
 * Register
