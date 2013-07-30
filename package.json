@@ -1,0 +1,14 @@
+{
+  "name": "auth",
+  "description": "Authentication module for wonka.js projects",
+  "version": "0.0.1",
+  "author": "",
+  "homepage": "",
+  "_id": "auth@0.0.1",
+  "resources": {
+    "images": [],
+    "fonts": [],
+    "stylesheets": []
+  },
+  "libraries": []
+}
