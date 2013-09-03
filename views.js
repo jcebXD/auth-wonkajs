@@ -37,7 +37,7 @@
       me.$el.html(me.template());
       return me;
     },
-    onLogin: function(e) {
+    onRegister: function(e) {
       e.stopPropagation();
       e.preventDefault();
       var me = this;
