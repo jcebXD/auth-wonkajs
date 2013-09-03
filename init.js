@@ -15,11 +15,9 @@
     onChange: function() {
       var me = this;
       me.attributes.empty = false;
-      if (App.pkg.settings.session_management) {
-        var storageEngine = App.pkg.settings.storage_engine;
-        var name = App.pkg._id;
-        window[storageEngine][name + '-session'] = JSON.stringify(me.toJSON());
-      }
+      var storageEngine = App.pkg.settings.storage_engine;
+      var name = App.pkg._id;
+      window[storageEngine][name + '-session'] = JSON.stringify(me.toJSON());
     },
     login: function() {
       var me = this;
