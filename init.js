@@ -51,11 +51,9 @@
       var me = this;
       me.clear();
       me.attributes.empty = true;
-      if (App.pkg.settings.session_management) {
-        var storageEngine = App.pkg.settings.storage_engine;
-        var name = App.pkg._id;
-        delete window[storageEngine][name + '-session'];
-      }
+      var storageEngine = App.pkg.settings.storage_engine;
+      var name = App.pkg._id;
+      delete window[storageEngine][name + '-session'];
     }
   });
 
